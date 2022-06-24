@@ -1,1 +1,1 @@
-# Abril
+Use Espressif 32 Platform version 3.5.0. Otherwise the project will not compile.
