@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ESP Wi-Fi Manager</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="topnav">
+    <h1>ESP Wi-Fi Manager</h1>
+  </div>
+  <h2>Wi-Fi Networks</h2>
+  <div class="content">
+    <div class="card-grid">
+      <div class="card">
+        %NETWORKS%
+      </div>
+    </div>    
+  </div>
+  <form action="/" method="POST">
+    <div class="content">
+      <div class="card-grid">
+        <div class="card">          
+          <p>
+            <label for="ssid">SSID</label>
+            <input type="text" id ="ssid" name="ssid" value="%SSID%"><br>
+            <label for="pass">Password</label>
+            <input type="text" id ="pass" name="pass" value="%PASS%"><br>
+            <label for="ip">IP Address</label>
+            <input type="text" id ="ip" name="ip" value="192.168.1.200"><br>
+            <label for="gateway">Gateway Address</label>
+            <input type="text" id ="gateway" name="gateway" value="192.168.1.1"><br>           
+          </p>
+        </div>
+      </div>
+    </div>
+    <h2>Smart Plug Parameters</h2>
+    <div class="content">
+      <div class="card-grid">
+        <div class="card">
+          <p>
+            <label for="smartplug">IP ADDRESS</label>
+            <input type="text" id ="plug_address" name="plug_address" value="%PLUG_ADDRESS%"><br>             
+          </p>        
+        </div>
+      </div>    
+    </div>
+    <h2>Humidifier parameters</h2>
+    <div class="content">
+      <div class="card-grid">
+        <div class="card">
+          <p>
+            <label for="threshold">Humidity Threshold</label>
+            <input type="text" id ="humidity_threshold" name="humidity_threshold" value="%HUMIDITY_THRESHOLD%"><br> 
+            <label for="tolerance">Humidity Tolerance</label>
+            <input type="text" id ="humidity_tolerance" name="humidity_tolerance" value="%HUMIDITY_TOLERANCE%"><br>             
+          </p>        
+        </div>
+      </div>    
+    </div>
+    <h2>Telegram configuration</h2>
+    <div class="content">
+      <div class="card-grid">
+        <div class="card">
+          <p>
+            <label for="chat_id">Chat ID</label>
+            <input type="text" id ="chat_id" name="chat_id" value="%CHAT_ID%"><br> 
+            <label for="bot_token">BOT Token</label>
+            <input type="text" id ="bot_token" name="bot_token" value="%BOT_TOKEN%"><br>             
+          </p>        
+        </div>
+      </div>    
+    </div>
+    <div class="content">
+      <div class="card-grid">
+        <div class="card">
+          <p>           
+            <input type ="submit" value ="Submit">  
+          </p>        
+        </div>
+      </div>    
+    </div>
+  </form>
+</body>
+</html>
